@@ -259,7 +259,10 @@ const Order = ({socket}) => {
         </View>
           </TouchableOpacity>
           <TouchableOpacity 
-        onPress={()=>{handleNotification(send)}}
+        onPress={()=>{
+          handleNotification(send)
+          navigation.navigate("Notification")
+        }}
         >
         <View style={styles.customerInput2}>
           <View style={styles.tableNParent}>

@@ -69,13 +69,7 @@ const App = () => {
               headerShown: true,
             }}
           /> 
-        //   <Stack.Screen
-        //   name="Test"
-        //   component={Test}
-        //   options={{
-        //     headerShown: true,
-        //   }}
-        // /> 
+    
           
           )}
           
@@ -139,6 +133,14 @@ const App = () => {
               headerShown: true,
             }}
           />
+          
+        <Stack.Screen
+            name="Notification"
+            component={Notification}
+            options={{
+              headerShown: true,
+            }}
+          /> 
          
      
       

@@ -1,7 +1,9 @@
 import React from "react";
 import { View, Image, Text, StyleSheet, TouchableOpacity } from "react-native";
-
+import { useNavigation } from '@react-navigation/native'
 export default function Notification() {
+  const navigation = useNavigation();
+  
   return (
     <View style={styles.view1}>
       <Image
@@ -15,7 +17,7 @@ export default function Notification() {
       <View style={styles.view3}>
         <Text style={styles.text2}>We will contact you as soon as possible</Text>
       </View>
-      <TouchableOpacity style={styles.view4}>
+      <TouchableOpacity style={styles.view4}onPress={()=>{navigation.navigate("Product")}}>
         <Text style={styles.text3}>Close</Text>
       </TouchableOpacity>
     </View>
